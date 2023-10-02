@@ -13,11 +13,11 @@ const os = require('os');
 module.exports =
 {
 	// Listening hostname (just for `gulp live` task).
-	domain : process.env.DOMAIN || 'tillsco.vboxe.com',
+	domain : process.env.DOMAIN || 'tillsco.fr',
 	// Signaling settings (protoo WebSocket server and HTTP API server).
 	https  :
 	{
-		listenIp   : '172.31.40.233',
+		listenIp   : '10.1.0.4',
 		// NOTE: Don't change listenPort (client app assumes 4443).
 		listenPort : process.env.PROTOO_LISTEN_PORT || 4443,
 		// NOTE: Set your own valid certificate files.
@@ -120,8 +120,8 @@ module.exports =
 			listenIps :
 			[
 				{															
-					ip          : process.env.MEDIASOUP_LISTEN_IP || '172.31.40.233',
-					announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '3.138.81.132'
+					ip          : process.env.MEDIASOUP_LISTEN_IP || '10.1.0.4',
+					announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '4.231.234.178'
 				}
 			],
 			initialAvailableOutgoingBitrate : 1000000,
@@ -137,8 +137,8 @@ module.exports =
 		{
 			listenIp :
 			{
-				ip          : process.env.MEDIASOUP_LISTEN_IP || '172.31.40.233',
-				announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '3.138.81.132'
+				ip          : process.env.MEDIASOUP_LISTEN_IP || '10.1.0.4',
+				announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '4.231.234.178'
 			},
 			maxSctpMessageSize : 262144
 		}
